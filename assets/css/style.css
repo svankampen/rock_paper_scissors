@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
 
-
+/*remove all margin and padding defaults*/
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-
+ 
 }
 
 h1 {
@@ -21,19 +21,57 @@ h2 {
     font-weight: 500;
 }
 
+p {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/*center logo on homepage*/
 #logo {
-    padding: 10px;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 5px;
+    margin: 0px; auto; 
+    width: 100%;
+    text-align: center;
+    
    
     
 }
 
-header {
+/* header {
     position: sticky;
     top: 0;
     background-color: #ffff;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px; 
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px; 
     width: 100%;
-    }
+    } */
+
+#button_area {
+    background-color: grey;
+}
+
+#button_area h2 {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    font-size: 1.8rem;
+
+
+}
+
+#picture_area { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+    
+}
+}
