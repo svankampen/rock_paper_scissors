@@ -29,7 +29,7 @@ p {
 
 /*center logo on homepage*/
 #logo {
-    margin: 0px; auto; 
+    margin: 0px, auto; 
     width: 100%;
     text-align: center;
     
@@ -82,4 +82,3 @@ p {
     
 }
 
-}
