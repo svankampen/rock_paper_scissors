@@ -72,6 +72,7 @@ p {
     align-items: center;
     padding: 10px;
     
+    
 }
 
 .buttonsClick {
@@ -81,7 +82,13 @@ p {
     font-weight: 500;
     font-size: .9rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /*add hover function*/
+    cursor: pointer;
+    transition: 150ms;
+}
+
+/*add hover so it looks like the clickable button zooms up as you hover over, user feedback*/
+.buttonsClick:hover {
+    transform: scale(1.3);
 }
 
 .images {
