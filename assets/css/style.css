@@ -102,12 +102,14 @@ p {
 #score_board {
     font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 500;
     font-size: 180%;
-    display: grid;
-    grid-template-rows: repeat(3, auto);
+    /* display: grid; */
+    /* grid-template-rows: repeat(3, auto); */
     align-items: center;
     justify-items: center;
+    /* display: inline-flexbox; */
 
 }
 
@@ -120,5 +122,13 @@ p {
     background-color: #F5F5F5;
     height: 240px;
     box-shadow: rgba(0.8, 0, 0, 0.1) 0px -5px 10px;
+    text-align: center;
+}
+
+/*add style to the choice that was made by user and computer, populated by js but styled via css*/
+.choice { 
+    font-weight: 600;
+    margin-top: 14px;
+
 }
 
