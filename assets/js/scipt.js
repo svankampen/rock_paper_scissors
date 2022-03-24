@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const yourChoiceDisplay = document.getElementById('your_choice')
 const computerChoiceDisplay = document.getElementById('computer_choice')
 const resultDisplay = document.getElementById('result')
+const userScore = document.getElementById('userpoints')
+const robotScore = document.getElementById('robotpoints')
 const possibleSelections = document.querySelectorAll('button') // can pick this out by class name also
 
 let yourChoice
@@ -36,7 +38,7 @@ function getComputerChoice() {
     computerChoiceDisplay.innerHTML = robotChoice // where to display
 }
 
-function getResults() {
+function getResults() { //need to add to function that it counts and adds scores via consts for each area
     if (robotChoice === yourChoice) {
         result = 'Result : Draw'
     }
