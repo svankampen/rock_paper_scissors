@@ -72,6 +72,7 @@ p {
     
 }
 
+/*button box shadom effect added*/
 .buttonsClick {
     width: 80px;
     height: 50px;
@@ -88,6 +89,7 @@ p {
     transform: scale(1.3);
 }
 
+/*images for rock paper scissors adjusted to height wisth set to auto to keep aspect ratio correct*/
 .images {
     width: auto;
     height: 150px;
@@ -99,6 +101,7 @@ p {
 
 #score_board {
     font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
     font-weight: 500;
     font-size: 180%;
     display: grid;
@@ -111,8 +114,8 @@ p {
 #play_area {
     display: flex;
     justify-content: space-around;
+    text-transform: uppercase;
     align-items: center;
-    padding: 10px;
     margin-top: 50px;
     background-color: #F5F5F5;
     height: 240px;

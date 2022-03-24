@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     let buttons = document.getElementsByTagName("button");
-})
+}) // event listener to load the dom declare buttons for use later
 
 const yourChoiceDisplay = document.getElementById('your_choice')
 const computerChoiceDisplay = document.getElementById('computer_choice')
@@ -20,7 +20,7 @@ possibleSelections.forEach(possibleSelection => possibleSelection.addEventListen
 
 
 function getComputerChoice() {
-    const randomNumberComputer = Math.floor (Math.random() * possibleSelections.length) + 1
+    const randomNumberComputer = Math.floor (Math.random() * possibleSelections.length) + 1 // function to get computer choice using floor for rounding
     
     if (randomNumberComputer === 1) {
         robotChoice = 'rock'
@@ -33,32 +33,32 @@ function getComputerChoice() {
         robotChoice = 'scissors'
     }
 
-    computerChoiceDisplay.innerHTML = robotChoice
+    computerChoiceDisplay.innerHTML = robotChoice // where to display
 }
 
 function getResults() {
     if (robotChoice === yourChoice) {
-        result = 'draw'
+        result = 'Result : Draw'
     }
     if (robotChoice === 'rock' && yourChoice === 'paper') {
-        result = 'You Win'
+        result = 'Result : You Win'
     }
     if (robotChoice === 'rock' && yourChoice === 'scissors') {
-        result = 'You Lose'
+        result = 'Result : You Lose'
     }
     if (robotChoice === 'paper' && yourChoice === 'scissors') {
-        result = 'You Win'
+        result = 'Result : You Win'
     }
     if (robotChoice === 'paper' && yourChoice === 'rock') {
-        result = 'You Lose'
+        result = 'Result : You Lose'
     }
     if (robotChoice === 'scissors' && yourChoice === 'rock') {
-        result = 'You Win'
+        result = 'Result : You Win'
     }
     if (robotChoice === 'scissors' && yourChoice === 'paper') {
-        result = 'You Lose'
+        result = 'Result : You Lose'
     }
-    resultDisplay.innerHTML = result
+    resultDisplay.innerHTML = result // display result for each game
 
 
 
