@@ -1,76 +1,85 @@
+const CHOICES = [
+    {
+        id: 'rock',
+        name: 'Rock',
+        winsOver: 'scissors',
+        imageSrc: './assets/images/Rock.png'
+    },
+    {
+        id: 'paper',
+        name: 'Paper',
+        winsOver: 'rock',
+        imageSrc: './assets/images/Paper.png'
+    },
+    {
+        id: 'scissors',
+        name: 'Scissors',
+        winsOver: 'paper',
+        imageSrc: './assets/images/Scissors.png'
+    },
+]
+
+const playerChoiceDisplay = document.getElementById('your_choice');
+const computerChoiceDisplay = document.getElementById('computer_choice');
+
+const resultDisplay = document.getElementById('result');
+const userScore = document.getElementById('user_points');
+const computerScore = document.getElementById('robot_points');
+document.getElementsByClassName('buttonsClick');
+const buttonArea = document.getElementById('button_area');
+
+
 document.addEventListener("DOMContentLoaded", () => {
-    let buttons = document.getElementsByTagName("button");
-}) // event listener to load the dom declare buttons for use later
+    initUI();
+    initEventListeners();
+}); // event listener to load the dom declare buttons for use later
 
-const yourChoiceDisplay = document.getElementById('your_choice')
-const computerChoiceDisplay = document.getElementById('computer_choice')
-const resultDisplay = document.getElementById('result')
-const userScore = document.getElementById('userpoints')
-const robotScore = document.getElementById('robotpoints')
-const possibleSelections = document.querySelectorAll('button') // can pick this out by class name also
-
-let yourChoice
-let robotChoice
-let draw
-
-possibleSelections.forEach(possibleSelection => possibleSelection.addEventListener('click', (e) => {
-    yourChoice = e.target.id
-    yourChoiceDisplay.innerHTML = yourChoice
-    getComputerChoice()
-    getResults()
-}))
-
-
-function getComputerChoice() {
-    const randomNumberComputer = Math.floor (Math.random() * possibleSelections.length) + 1 // function to get computer choice using floor for rounding
-    
-    if (randomNumberComputer === 1) {
-        robotChoice = 'rock'
-        
-    }
-    if (randomNumberComputer === 2) {
-        robotChoice = 'paper'
-    }
-    if (randomNumberComputer === 3) {
-        robotChoice = 'scissors'
-    }
-
-    computerChoiceDisplay.innerHTML = robotChoice // where to display
+function initEventListeners() {
+    const possibleChoices = Array.from(document.getElementsByClassName('buttonsClick'));
+    possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', onChoiceClick));
 }
 
-function getResults() { //need to add to function that it counts and adds scores via consts for each area
-    if (robotChoice === yourChoice) {
+function onChoiceClick(e) {
+    const playerChoiceId = e.target.id;
+    playerChoiceDisplay.innerHTML = playerChoiceId;
+    const computerChoiceId = getComputerChoiceId()
+    checkForWinner(playerChoiceId, computerChoiceId)
+}
+
+
+function getComputerChoiceId() {
+    const randomNumberComputer = Math.floor (Math.random() * CHOICES.length); // function to get computer choice using floor for rounding
+    const randomChoiceId =  CHOICES[randomNumberComputer].id;
+    computerChoiceDisplay.innerHTML = randomChoiceId // where to display
+    return randomChoiceId;
+}
+
+function checkForWinner(playerChoiceId, computerChoiceId) { //need to add to function that it counts and adds scores via consts for each area
+    if (computerChoiceId === playerChoiceId) {
         result = 'Result : Draw'
     }
-    if (robotChoice === 'rock' && yourChoice === 'paper') {
+    const playerChoiceConfig = CHOICES.find(eachChoice => eachChoice.id === playerChoiceId);
+    if(playerChoiceConfig.winsOver === computerChoiceId) {
+        // Player won
         result = 'Result : You Win'
-    }
-    if (robotChoice === 'rock' && yourChoice === 'scissors') {
+        userScore.innerHTML = parseInt(userScore.innerHTML) + 1;
+
+    } else {
+        // Computer won
         result = 'Result : You Lose'
+        computerScore.innerHTML = parseInt(computerScore.innerHTML) + 1;
     }
-    if (robotChoice === 'paper' && yourChoice === 'scissors') {
-        result = 'Result : You Win'
-    }
-    if (robotChoice === 'paper' && yourChoice === 'rock') {
-        result = 'Result : You Lose'
-    }
-    if (robotChoice === 'scissors' && yourChoice === 'rock') {
-        result = 'Result : You Win'
-    }
-    if (robotChoice === 'scissors' && yourChoice === 'paper') {
-        result = 'Result : You Lose'
-    }
+
     resultDisplay.innerHTML = result // display result for each game
-
-
-
 }
 
+function initUI() {
+    let pictureAreaHtml = '', buttonsHtml = '';
+    CHOICES.forEach(eachChoice => {
+        pictureAreaHtml+= `<img class="images" src="${eachChoice.imageSrc}" alt="image of ${eachChoice.name}">`
+        buttonsHtml+= `<button class= "buttonsClick" id="${eachChoice.id}" data-selection = "${eachChoice.name}">${eachChoice.name}</button>`;
+    });
 
-
-
-
-
-
-
-
+    const buttonAreaHtml = `<h2>Take Your Pick</h2><div id="picture_area">${pictureAreaHtml}</div><div id="buttons">${buttonsHtml}</div>`;
+    buttonArea.innerHTML = buttonAreaHtml;
+}
