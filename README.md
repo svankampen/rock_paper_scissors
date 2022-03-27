@@ -1,108 +1,160 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock | Paper | Scissors
 
-Welcome svankampen,
+Welcome to Rock Paper Scissors
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This webpage has been created and designed for users looking for a simple and fun destraction from their day.
+The user can play against the computer by choose their option first and playing against the computer.
+The game will keep a score of who is winning and on refreshing the screen clear all the available data.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Place holder for media screen review!
 
 ---
 
-Happy coding!
+## Preparation
+
+- **Wire Frame**
+    1. During the planning phase of the project a wireframing tool called balsamiq was used. 
+    2. By using a wireframe the webpage could be visualised and the number of sections and functions understood from a high level.
+    3. Throughout the project the wireframe was used as a guide of what was set out to achieve.
+    4. The wireframe file can be viewed here [Link](./assets/wireframe/Rock_Paper_Scissors.bmpr)
+
+
+
+---
+
+## Features
+
+### Existing Features
+
+- **Navigation Menu**
+    1. A navigation menu has been added to the webpage on all three pages with four buttons "Home", "About", "Contact" and the Logo which defaults to the homepage.
+    2. The Navigation bar has been style consistently for ease of use and an enjoyable experience as the visitor runs through each section.
+
+![image](https://user-images.githubusercontent.com/64638313/153779223-260c364c-43cd-4f03-94c9-0cfd7fd3aae4.png)
+
+- **Landing Page Image**
+    1. The landing page displays a hero image with a text overlay "Buy Once Buy with Confidence" together these two elements introduce the visitor to what the webpage is here for. 
+    2. The hero image is set out to capture the visitor’s attention and to encourage the visitor to read more.
+
+![image](https://user-images.githubusercontent.com/64638313/153779481-6220f6db-d4a6-4679-abc2-d49df71a8cda.png)
+
+- **Brand Values Section**
+    1. A brand values section has been displayed to give the visitor insight into Croghan's beliefs and provides them with the opportunity to quickly understand if Croghan is a good fit for them as a retailer.
+    2. This section should act as the elevator pitch giving the visitor (potential supplier) enough information to enquiry more.
+
+![image](https://user-images.githubusercontent.com/64638313/153779672-db971c94-e12d-47db-90ef-3ed092813ca0.png)
+
+- **Find Us Section**
+    1. On the homepage a where to find us section has been added, this section shows where Croghan will be attending European tradeshows.
+    2. This section provides the visitor with the opportunity to talk with Croghan face to face at a trade show.
+
+![image](https://user-images.githubusercontent.com/64638313/153779953-d18ab3d6-9766-490d-bc7d-3aa0511ed19c.png)
+
+
+- **Contact Us Button**
+    1. A button has been added at the bottom of the homepage and about us page just above the footer. This button acts as a call to action to fill out the contact us form on the contact us page. 
+    2. The button has a hover effect and an active effect to ensure it is clear for the user that this is a functional button. The button will move the user to the contact page.
+
+![image](https://user-images.githubusercontent.com/64638313/153780049-f8d53b9e-9406-483f-ad57-c3acfa2e8236.png)
+
+
+- **Footer**
+    1. Within the footer the social tags can been seen for Facebook, Instagram, twitter and YouTube. 
+    2. Each icon if clicked will load out a new page for the visitor with the desired Social Media Account showing on a new tab.
+    3. The background has been given a dark grey background to provide contrast to the rest of the page with the icons styled in an off white to standout on the footer.
+    4. The footer is consistent throughout each page is responsive for desktop, tablet and mobile.
+
+![image](./assets/images/footer.JPG)
+
+- **About Us Section**
+    1. The next page the visitor will see along the navigation menu is the "about us" section. Initially greeted with a hero image with a text overlay. Its purpose is to get the visitor to read more.
+    2. This page is here to demonstrate to the visitor who the founders of Croghan are and provide a background into both Sam & Matt.
+    3. Along with a short paragraph of text is a portrait photo of each founder so the visitor can get a sense of who they are going to be doing business with.
+    4. The page remains consistent in its call-to-action button for "Contact Us" and its footer containing the socials.
+
+![image](./assets/images/about_us_snip.JPG)
+
+- **Contact Us Section**
+    1. When the visitor clicks either the call-to-action button "contact us" or navigate to the contact page they will move to the page with a contact form.
+    2. The form is formatted and provides an open text area for the visitor to submit a message.
+    3. The form has a hover effect added to the button to ensure the visitor understand this is functional button.
+
+![image](./assets/images/contact_snip.JPG)
+
+---
+
+## Testing
+
+### Manual Testing
+
+- **Click through**
+    - In order to ensure that the user experience is as expected manual testing was performed on the webpage.
+    - This involved clicking on all navigations links to ensure the user was brought to the desired page.
+    - Testing any hover functions that had been added for navigation links and user buttons.
+    - Scrolling was also tested for sticky headers.
+    - After retesting and fixing bugs no more issues where found.
+
+- **Bugs**
+    - When hovering over the navigation links it was found that there was an a:active set for clicking on a link which interfere with the class a.active for underlining the active navigation tab. The a:active function was removed from the navigation links to add a more user friendly experience. 
+
+- **Screen Resolution**
+    - In order to create a user-friendly experience for desktop, tablet and mobile the webpage has been tested for screen resolution sizes.
+    - This was carried out using Dev Tools and adjusting the screen resolution for each respectively.
+    - After retesting the bugs that were found no issues could be noticed, this was also passed via Lighthouse.
+
+- **Bugs**
+    - There was a bug found when adjusting the screen resolution to mobile. On the homepage section for brand values the test was overflowing onto the contact us button and footer. This was adjusted and fixed by remove the height from the footer and contact button section.
+    - Another bug appeared on the contact us page, because the page was not long enough it created a white space below the footer. When this was investigated a sticky footer was recommended but it was found that adjusting the height of the hero image section worked best to across all devices.
+
+
+---
+
+### Lighthouse Testing
+
+- The code for each page has been validated using Dev Tools - Lighthouse.
+- Lighthouse showed that images were too large and in order to fix this issue the files had to be compressed using resource https://tinypng.com/
+- Using lighthouse as resource allowed for quick retesting and changes to each element that was flagged until an appropriate score was obtained.
+
+![image](./assets/images/testing_snip.JPG)
+
+### Validator Testing
+
+- HTML
+    - No errors were returned when passing through the official W3C validator
+
+- CSS
+    - No errors were found when passing through the official (Jigsaw) validator
+
+
+---
+## Deployment
+
+- The site was deployed using GitHub Pages as follows;
+    - In the GitHub repository, navigate to the Settings tab
+    - From the code and automation section select Pages
+    - From the source section drop-down menu, select the Master Branch
+    - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - https://svankampen.github.io/croghan/
+
+---
+
+## Credits 
+
+- **Content**
+    - Footer logos have been taken from https://fontawesome.com/
+    - Adobe type founds where used from Croghan Brand assets of which designer Colm O Connor created the branding for https://www.colmoconnor.com/ 
+    - Colour palette used for headings and text come from Croghan Brand assets of which designer Colm O Connor created the branding for https://www.colmoconnor.com/ 
+    - Mentor Akshat Garg recommended https://flexboxfroggy.com/ to use the flex function where needed in the webpage.
+    - The structure for the project was created using I Love Running as a guide https://github.com/Code-Institute-Org/love-running-2.0 . Basic structure for the contact form and webpage layout was referred to throughout.
+    - For any code issues that came up https://www.w3schools.com/html/html_css.asp was used as a library of potential solutions in HTML & CSS.
+    - To compress images the webpage https://tinypng.com/ was used.
+
+
+
+- **Media**
+    - Portrait images of the founders are owned personally and where taken for another webpage project.
+    - Image for the homepage hero image is taken from opensource https://www.pexels.com/
+    - Image for the homepage find us at section was from opensource https://www.hdrshooter.com/2020/04/22/more-super-ultra-wide-wallpapers-3/ 
+    - Image for about us hero image is taken from opensource https://www.pexels.com/
+    - Image for contact us hero image is taken from opensource https://www.pexels.com/
