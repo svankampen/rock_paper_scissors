@@ -108,6 +108,7 @@ p {
 
 #play_area {
     display: flex;
+    padding: 20px;
     justify-content: space-around;
     text-transform: uppercase;
     align-items: center;
@@ -168,7 +169,7 @@ p {
    #play_area > h2 {
        margin-top: 30px;
    }
-
+/*reorder score board when stacked*/
    .PC_choice {
        order: -2;
 
