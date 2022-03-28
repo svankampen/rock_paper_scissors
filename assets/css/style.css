@@ -113,7 +113,6 @@ p {
     align-items: center;
     margin-top: 50px;
     background-color: #fbfcf8;
-    height: 180px;
     box-shadow: rgba(43, 42, 42, 0.1) 0px -3px 10px;
     text-align: center;
 }
@@ -137,5 +136,55 @@ p {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
     font-size: 150%;
+}
+
+/*media query for mobile responsiveness*/
+@media screen and (max-width: 758px) {
+    #button_area {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   .buttonsClick { 
+       font-size: 1.0rem;
+       height: 40px;
+       width: 70px;
+   }
+
+   .images {
+    width: auto;
+    height: 100px;
+   }
+
+   #play_area {
+       font-size: 0.75rem;
+       padding: 10px;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+
+   }
+
+   #play_area > h2 {
+       margin-top: 30px;
+   }
+
+   .PC_choice {
+       order: -2;
+
+   }
+
+   .your_choice {
+       margin-top: 20px;
+   }
+
+   #rules {
+       font-size: 0.85rem;
+   }
+
+   #score_board { 
+       margin-top: 10px;
+   }
+   
 }
 
