@@ -27,10 +27,10 @@ Place holder for media screen review!
 ### Existing Features
 
 - **Navigation Menu**
-    1. A navigation menu has been added to the webpage on all three pages with four buttons "Home", "About", "Contact" and the Logo which defaults to the homepage.
-    2. The Navigation bar has been style consistently for ease of use and an enjoyable experience as the visitor runs through each section.
+    1. A logo has been added to the top of the page to ensure the visitor knows what they are reviewing.
+    2. Underneath the logo display there is the first prompt line for the user, the user is asked to "Take Your Pick".
 
-![image](https://user-images.githubusercontent.com/64638313/153779223-260c364c-43cd-4f03-94c9-0cfd7fd3aae4.png)
+![image](./assets/images/Coding_Logo_Section.JPG)
 
 - **Landing Page Image**
     1. The landing page displays a hero image with a text overlay "Buy Once Buy with Confidence" together these two elements introduce the visitor to what the webpage is here for. 
