@@ -6,7 +6,7 @@ This webpage has been created and designed for users looking for a simple and fu
 The user can play against the computer by choose their option first and playing against the computer.
 The game will keep a score of who is winning and on refreshing the screen clear all the available data.
 
-Place holder for media screen review!
+![image](./assets/images/Rock%20paper%20Scrissors_MockUP.JPG)
 
 ---
 
