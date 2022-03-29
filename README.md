@@ -18,8 +18,6 @@ The game will keep a score of who is winning and on refreshing the screen clear 
     3. Throughout the project the wireframe was used as a guide of what was set out to achieve.
     4. The wireframe file can be viewed here [Link](./assets/wireframe/Rock_Paper_Scissors.bmpr)
 
-
-
 ---
 
 ## Features
@@ -67,7 +65,7 @@ The game will keep a score of who is winning and on refreshing the screen clear 
     - Scrolling through webpage over different media displays for desktop, laptop, tablet and mobile.
     - After retesting and fixing bugs no more issues where found.
 
- - **Bugs**
+- **Bugs**
     - When completing the click through testing it was found that the logic was slightly off for the scoreboard display "Result" when computer choice was equal to user choice it scored the game as a loss for the user and added a point to the computer. 
 
 - **Screen Resolution**

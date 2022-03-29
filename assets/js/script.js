@@ -57,6 +57,7 @@ function getComputerChoiceId() {
 function checkForWinner(playerChoiceId, computerChoiceId) { //need to add to function that it counts and adds scores via consts for each area
     if (computerChoiceId === playerChoiceId) {
         result = 'Result : Draw'
+        
     }
     const playerChoiceConfig = CHOICES.find(eachChoice => eachChoice.id === playerChoiceId);
     if(playerChoiceConfig.winsOver === computerChoiceId) {
@@ -68,7 +69,7 @@ function checkForWinner(playerChoiceId, computerChoiceId) { //need to add to fun
         // Computer won
         result = 'Result : You Lose'
         computerScore.innerHTML = parseInt(computerScore.innerHTML) + 1;
-    }
+    } 
 
     resultDisplay.innerHTML = result // display result for each game
 }
