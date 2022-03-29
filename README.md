@@ -60,7 +60,7 @@ The game will keep a score of who is winning and on refreshing the screen clear 
 
 ### Manual Testing
 
-- **Click through**
+- **Click Through**
     - In order to ensure that the user experience is as expected manual testing was performed on the webpage.
     - This involved clicking on all all playable links to ensure the user function was running correctly.
     - Testing any hover functions for each button.
@@ -89,13 +89,16 @@ The game will keep a score of who is winning and on refreshing the screen clear 
 ![image](./assets/images/Rock%20paper%20Scrissors_LightHouse1.JPG)
 ![image](./assets/images/Rock%20paper%20Scrissors_LightHouse2.JPG)
 
-<!-- ### Validator Testing
+### Validator Testing
 
 - HTML
-    - No errors were returned when passing through the official W3C validator
+    <!-- - No errors were returned when passing through the official W3C validator -->
 
 - CSS
-    - No errors were found when passing through the official (Jigsaw) validator -->
+    <!-- - No errors were found when passing through the official (Jigsaw) validator  -->
+
+- JavaScript
+    - 
 
 
 ---
@@ -145,5 +148,16 @@ You can create a clone of the repository by following the below steps ;
 
 - **Media**
     - Image for the rock paper and scissors from opensource https://pixabay.com/images/search/rock-paper-scissors/
+
+
+---
+
+## Ideas for the future
+
+1. Given more time the project would have displayed a animation when the user selected an option, something similar to a graphic of two fists pumping three times as they would in the real world, this would provide some anticipation to the game overall.
+2. Provide more options within the game for ; Rock Paper Scissors Lizard Spock.
+3. When the user selects an option display an image instead of text for the users selection. The same can be done with the computers choice selection. 
+
+
 
 
