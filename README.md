@@ -32,26 +32,27 @@ The game will keep a score of who is winning and on refreshing the screen clear 
 
 ![image](./assets/images/Coding_Logo_Section.JPG)
 
-- **Landing Page Image**
-    1. The landing page displays a hero image with a text overlay "Buy Once Buy with Confidence" together these two elements introduce the visitor to what the webpage is here for. 
-    2. The hero image is set out to capture the visitor’s attention and to encourage the visitor to read more.
+- **Selection Area**
+    1. The next section of the webpage displays the first play area of the rock paper scissors game.
+    2. Here it shows three images representing "Rock" "Paper" and "Scissors" so the user knows what their choices in the game are.
+    3. Underneath the image for each selection a button with a box shadow style can be seen which names each selection. The buttons are interactive with a hover effect to ensure the user knows the button is clickable.
 
-![image](https://user-images.githubusercontent.com/64638313/153779481-6220f6db-d4a6-4679-abc2-d49df71a8cda.png)
+![image](./assets/images/Rock_Paper_Scissors_Selection.JPG)
 
-- **Brand Values Section**
-    1. A brand values section has been displayed to give the visitor insight into Croghan's beliefs and provides them with the opportunity to quickly understand if Croghan is a good fit for them as a retailer.
-    2. This section should act as the elevator pitch giving the visitor (potential supplier) enough information to enquiry more.
+- **Rules Area**
+    1. To ensure the user understands the game the next section has been set up to show each game rule, what beats what and so on.
+    2. The rules section starts with a heading followed by a line of rules seperated by "|" . It was decided that the simpliest way to layout the rules was not using a list but a visual representation of the rule set.
 
-![image](https://user-images.githubusercontent.com/64638313/153779672-db971c94-e12d-47db-90ef-3ed092813ca0.png)
+![image](./assets/images/Rock%20paper%20Scrissors_Rules.JPG)
 
-- **Find Us Section**
-    1. On the homepage a where to find us section has been added, this section shows where Croghan will be attending European tradeshows.
-    2. This section provides the visitor with the opportunity to talk with Croghan face to face at a trade show.
+- **Results Display Dashboard**
+    1. In order to the user to understand who won in each game a results display dashboard has been created.
+    2. 
 
-![image](https://user-images.githubusercontent.com/64638313/153779953-d18ab3d6-9766-490d-bc7d-3aa0511ed19c.png)
+![image](./assets/images/Rock%20paper%20Scrissors_Results.JPG)
 
 
-- **Contact Us Button**
+<!-- - **Contact Us Button**
     1. A button has been added at the bottom of the homepage and about us page just above the footer. This button acts as a call to action to fill out the contact us form on the contact us page. 
     2. The button has a hover effect and an active effect to ensure it is clear for the user that this is a functional button. The button will move the user to the contact page.
 
@@ -157,4 +158,4 @@ The live link can be found here - https://svankampen.github.io/croghan/
     - Image for the homepage hero image is taken from opensource https://www.pexels.com/
     - Image for the homepage find us at section was from opensource https://www.hdrshooter.com/2020/04/22/more-super-ultra-wide-wallpapers-3/ 
     - Image for about us hero image is taken from opensource https://www.pexels.com/
-    - Image for contact us hero image is taken from opensource https://www.pexels.com/
+    - Image for contact us hero image is taken from opensource https://www.pexels.com/ -->

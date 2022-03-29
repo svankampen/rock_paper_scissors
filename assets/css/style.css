@@ -34,14 +34,6 @@ p {
     
 }
 
-/* header {
-    position: sticky;
-    top: 0;
-    background-color: #ffff;
-    box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px; 
-    width: 100%;
-    } */
-
 #button_area h2 {
     margin: 0 auto;
     text-align: center;
@@ -113,7 +105,7 @@ p {
     text-transform: uppercase;
     align-items: center;
     margin-top: 50px;
-    background-color: #fbfcf8;
+    background-color: #eff1ea;
     box-shadow: rgba(43, 42, 42, 0.1) 0px -3px 10px;
     text-align: center;
 }
