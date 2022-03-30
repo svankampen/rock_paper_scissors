@@ -116,6 +116,8 @@ p {
 .choice { 
     font-weight: 600;
     margin-top: 14px;
+    display: flex;
+    flex-direction: column;
 
 }
 

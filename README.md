@@ -20,10 +20,6 @@ The game will keep a score of who is winning and on refreshing the screen clear 
 
 ---
 
-## User Stories
-
----
-
 ## Technologies Used
 
 ---
