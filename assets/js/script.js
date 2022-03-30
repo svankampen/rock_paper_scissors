@@ -32,7 +32,7 @@ const buttonArea = document.getElementById('button_area');
 document.addEventListener("DOMContentLoaded", () => {
     initUI();
     initEventListeners();
-}); // event listener to load the dom declare buttons for use later
+}); // event listener to load the dom 
 
 function initEventListeners() {
     const possibleChoices = Array.from(document.getElementsByClassName('buttonsClick'));
@@ -42,42 +42,44 @@ function initEventListeners() {
 function onChoiceClick(e) {
     const playerChoiceId = e.target.id;
     playerChoiceDisplay.innerHTML = playerChoiceId;
-    const computerChoiceId = getComputerChoiceId()
-    checkForWinner(playerChoiceId, computerChoiceId)
+    const computerChoiceId = getComputerChoiceId();
+    checkForWinner(playerChoiceId, computerChoiceId);
 }
 
 
 function getComputerChoiceId() {
     const randomNumberComputer = Math.floor (Math.random() * CHOICES.length); // function to get computer choice using floor for rounding
     const randomChoiceId =  CHOICES[randomNumberComputer].id;
-    computerChoiceDisplay.innerHTML = randomChoiceId // where to display
+    computerChoiceDisplay.innerHTML = randomChoiceId; // where to display
     return randomChoiceId;
 }
 
-function checkForWinner(playerChoiceId, computerChoiceId) { //need to add to function that it counts and adds scores via consts for each area
+let result;
+
+function checkForWinner(playerChoiceId, computerChoiceId) {
     if (computerChoiceId === playerChoiceId) {
-        result = 'Result : Draw'
+        result = 'Result : Draw';
         
     }
     const playerChoiceConfig = CHOICES.find(eachChoice => eachChoice.id === playerChoiceId);
     if(playerChoiceConfig.winsOver === computerChoiceId) {
         // Player won
-        result = 'Result : You Win'
+        result = 'Result : You Win';
         userScore.innerHTML = parseInt(userScore.innerHTML) + 1;
 
     } else {
         // Computer won
-        result = 'Result : You Lose'
+        result = 'Result : You Lose';
         computerScore.innerHTML = parseInt(computerScore.innerHTML) + 1;
     } 
 
-    resultDisplay.innerHTML = result // display result for each game
+    resultDisplay.innerHTML = result; // display result for each game
 }
 
 function initUI() {
     let pictureAreaHtml = '', buttonsHtml = '';
     CHOICES.forEach(eachChoice => {
-        pictureAreaHtml+= `<img class="images" src="${eachChoice.imageSrc}" alt="image of ${eachChoice.name}">`
+        pictureAreaHtml+= `<img class="images" src="${eachChoice.imageSrc}" alt="image of ${eachChoice.name}">`;
         buttonsHtml+= `<button class= "buttonsClick" id="${eachChoice.id}" data-selection = "${eachChoice.name}">${eachChoice.name}</button>`;
     });
 

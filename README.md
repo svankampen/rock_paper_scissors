@@ -93,7 +93,8 @@ The game will keep a score of who is winning and on refreshing the screen clear 
     <!-- - No errors were returned when passing through the official W3C validator -->
 
 - CSS
-    <!-- - No errors were found when passing through the official (Jigsaw) validator  -->
+    - One error found no requirement for margin: 0,auto in logo, this was removed and retested.
+    - Site now pass through https://jigsaw.w3.org/css-validator
 
 - JavaScript
     - 
