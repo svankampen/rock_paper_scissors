@@ -107,6 +107,9 @@ p {
     background-color: #eff1ea;
     box-shadow: rgba(43, 42, 42, 0.1) 0px -3px 10px;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /*add style to the choice that was made by user and computer, populated by js but styled via css*/
@@ -120,7 +123,7 @@ p {
     font-family: 'Rajdhani', sans-serif;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
     
 }
 
@@ -154,6 +157,7 @@ p {
        flex-direction: column;
        justify-content: space-around;
        align-items: center;
+       
 
    }
 

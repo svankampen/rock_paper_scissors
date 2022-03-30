@@ -1,3 +1,4 @@
+//choices and logic stored as const
 const CHOICES = [
     {
         id: 'rock',
@@ -57,12 +58,12 @@ function getComputerChoiceId() {
 let result;
 
 function checkForWinner(playerChoiceId, computerChoiceId) {
+    const playerChoiceConfig = CHOICES.find(eachChoice => eachChoice.id === playerChoiceId);
+    
     if (computerChoiceId === playerChoiceId) {
         result = 'Result : Draw';
         
-    }
-    const playerChoiceConfig = CHOICES.find(eachChoice => eachChoice.id === playerChoiceId);
-    if(playerChoiceConfig.winsOver === computerChoiceId) {
+    } else if(playerChoiceConfig.winsOver === computerChoiceId) {
         // Player won
         result = 'Result : You Win';
         userScore.innerHTML = parseInt(userScore.innerHTML) + 1;
