@@ -20,10 +20,6 @@ The game will keep a score of who is winning and on refreshing the screen clear 
 
 ---
 
-## Technologies Used
-
----
-
 ## Features
 
 ### Existing Features
@@ -94,14 +90,15 @@ The game will keep a score of who is winning and on refreshing the screen clear 
 ### Validator Testing
 
 - HTML
-    <!-- - No errors were returned when passing through the official W3C validator -->
+    - One error found when runnung the HTML validator https://validator.w3.org/ P element not allowed as a child of a H2 in the context of flow.
+    - Span was used to replace the P element ensuring the validator cleared all errors.
 
 - CSS
     - One error found no requirement for margin: 0,auto in logo, this was removed and retested.
     - Site now pass through https://jigsaw.w3.org/css-validator
 
 - JavaScript
-    - 
+    - JS Code has beenn passed through JS Hint with no major errors.
 
 
 ---
